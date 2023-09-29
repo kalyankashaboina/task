@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [name^=first]
+        {
+            background-color: rgb(0, 255, 136);
+        }
+        [type$=password]{
+            background-color: black;
+    
+        }
+        [type*=tex]{
+            height:40px ;
+            box-shadow: 4px 6px;
+        }
+        
+    </style>
+</head>
+<body style="color: darkgreen; background-color: antiquewhite;">
+   <fieldset>
+    <legend>
+<h2>Sig Up</h2></legend>
+<form>
+    <label for="fname"> first name</label>
+    <br><input type="text" id="fname" name="first name"
+    placeholder="firstname"/><br>
+    <label for="sname"> second name</label>
+    <br><input type="text" id="sname" name="second name" placeholder="second name"/><br>
+    <label>Email</label>   <br>
+    <input type="email"  id="mail" name="Email" placeholder="type@mail.com"/><br>
+    <label for="mobile">Phone</label><br>
+    <input type="number" id="mobile" name="phone" placeholder="123456789"/><br/>
+    <label>Gender</label><br>
+    <label for="male">male</label><input type="radio">
+    <label for="female">female</label><input type="radio"><br>
+<label>Password</label><br>
+<input type="password" id="password" name="password" placeholder="**********"/><br>
+<br><label for="password">Conform Password</label><br>
+<input type="password" placeholder="*********"><br>
+<br>
+<label for="button"></label>
+<button style="color: yellow; background-color: aqua;" type="submit">submit</button>
+
+<br>
+<br>
+<br>
+</form>
+</fieldset>
+<h1></h1><br>
+<table>
+    <tr>
+     <th style="background-color: aqua;">SLNO</th>
+     <th style="background-color: cadetblue;">Date</th>
+     <th style="background-color: chartreuse;">Match</th>
+     <th style="background-color: darksalmon;">Timing</th>
+     <th style="background-color: aquamarine;">venue</th>
+    </tr>
+    <tr>
+     <td style="background-color: aqua;">1</td>
+     <td style="background-color: cadetblue;">April1</td>
+     <td style="background-color: chartreuse;">Rcb vs Mi</td>
+     <td style="background-color: darksalmon;">7:30pm</td>
+     <td style="background-color: aquamarine;">Mumbai</td>
+    </tr>
+    <tr>
+     <td style="background-color: aqua;">2</td>
+     <td style="background-color: cadetblue;">April2</td>
+     <td style="background-color: chartreuse;">Lsg vs Gt</td>
+     <td style="background-color: darksalmon;">7:30pm</td>
+     <td style="background-color: aquamarine;">Lucknow</td>
+    </tr>
+    <tr>
+    <td style="background-color: aqua;">3</td>
+    <td style="background-color: cadetblue;">April3</td>
+    <td style="background-color: chartreuse;">Csk vs Srh</td>
+    <td style="background-color: darksalmon;">7:30pm</td>
+    <td style="background-color: aquamarine;">Hyd</td>
+    </tr>
+    </table>
+ 
+</body>
+</html>
