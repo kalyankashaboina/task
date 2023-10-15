@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+  width: 60vw;
+  height:40vh;
+
+  animation-name: example;
+  animation-duration:10s;
+  animation-direction: alternate;  
+  background-repeat:no-repeat;
+}
+.ballbox{
+    width: 400px;
+    height:260px;
+    color: red;
+    background-color: aquamarine;
+    border:2px solid black;
+
+}
+
+.ball{
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: yellow;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: absolute;
+    animation: bounce 2s linear infinite;
+animation-name: ballbounce;
+}
+@keyframes ballbounce{
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(200px);}
+
+}
+ .ball:nth-child(1){animation-delay: 0s;
+left: 0px;} 
+.ball:nth-child(2){animation-delay: 0.5s;left:70px;}
+.ball:nth-child(3){animation-delay: 1s;
+left:140px;}
+.ball:nth-child(4){animation-delay: 1.5s;
+left:210px;}
+.ball:nth-child(5){animation-delay: 2s;
+left:280px}
+.ball:nth-child(6){animation-delay: 2.5s;
+left: 350px;}
+
+ @keyframes example{
+    0%{background-image: url(https://tse4.mm.bing.net/th?id=OIP.dBVu8gL4CT2Iuz6al1Qg9AHaI2&pid=Api&P=0&h=220);}
+20%{background-image: url(https://tse2.mm.bing.net/th?id=OIP.mOnrsNpnpEVpWSIYFnO0XAHaEK&pid=Api&P=0&h=220);}
+40%{background-image: url(https://twinfinite.net/wp-content/uploads/2021/03/marvelsavengers1.jpg);}
+ 60%{background-image: url(https://tse3.mm.bing.net/th?id=OIP.weT9rQ5qwr7AC7L1oiZOggHaEK&pid=Api&P=0&h=220);}
+80%{background-image: url(https://tse2.mm.bing.net/th?id=OIP.OKIdaY_2XLwKwKno2K_eIwHaFX&pid=Api&P=0&h=220);}
+100%{background-image: url(https://wallpapercave.com/wp/wp3891865.jpg);}
+}
+
+.glow{
+    font-size: 55px;
+}
+.glow spam{
+    animation: blink 1s infinite alternate;
+    text-transform: uppercase;
+
+}
+@keyframes blink{
+    0%{
+        text-shadow: 0 0 10px magenta,0 0 20px magenta,0 0 30px magenta;
+    }
+    100%{
+        text-shadow:0 0 40px greenyellow;
+    }
+}
+    </style>
+</head>
+<body> <div class="a"></div>
+    <div class="f" style="display: flex;">
+<div class="b"></div>
+<div class="c"></div>
+<div class="d"></div>
+<div class="e"></div>
+</div>
+<br>
+<!-- <div class="ball"></div> -->
+<div class="ballbox">
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+</div>
+<br>
+
+<div class="glow"> 
+    <spam>K</spam>
+    <spam>A</spam>
+    <spam>L</spam>
+    <spam>Y</spam>
+    <spam>A</spam>
+    <spam>N</spam>
+
+</body>
+
+</html>
